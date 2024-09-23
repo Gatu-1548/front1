@@ -1,0 +1,121 @@
+.usuarios-list-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.usuarios-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.usuarios-table th, .usuarios-table td {
+  padding: 15px 10px;
+  text-align: left;
+}
+
+.usuarios-table th {
+  background-color: #007bff; /* Un verde más suave */
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.usuarios-table tr {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.usuarios-table tr:hover {
+  background-color: #e9e9e9; /* Cambiar el color al hacer hover */
+}
+
+.usuarios-table td {
+  color: #555;
+}
+
+.usuarios-table th:first-child, .usuarios-table td:first-child {
+  border-top-left-radius: 10px;
+}
+
+.usuarios-table th:last-child, .usuarios-table td:last-child {
+  border-top-right-radius: 10px;
+}
+
+.role-select {
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.role-select:focus {
+  outline: none;
+  border-color: #28a745;
+  background-color: #ffffff;
+}
+
+.assign-role-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.assign-role-button:hover {
+  background-color: #218838;
+}
+
+/* Responsividad */
+@media screen and (max-width: 600px) {
+  .usuarios-table thead {
+    display: none;
+  }
+
+  .usuarios-table tr {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .usuarios-table td {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .usuarios-table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .usuarios-table td:last-child {
+    border-bottom: 0;
+  }
+}
+

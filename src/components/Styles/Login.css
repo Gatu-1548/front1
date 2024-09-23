@@ -1,0 +1,87 @@
+/* Agrega estos estilos en un archivo CSS separado o dentro de tu archivo JSX dentro de una etiqueta <style> */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #00c6ff, #0072ff); /* Degradado de azul claro a oscuro */
+}
+
+.login-box {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+  padding: 50px;
+  border-radius: 30px; /* Bordes muy redondeados */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  width: 100%;
+  max-width: 400px;
+  transition: box-shadow 0.3s ease;
+}
+
+.login-box:hover {
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 15px; /* Padding más grande */
+  margin: 15px 0;
+  border-radius: 20px; /* Bordes muy redondeados */
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 16px;
+}
+
+.login-box input:focus {
+  border-color: #0072ff; /* Azul más brillante */
+  box-shadow: 0 0 12px rgba(0, 114, 255, 0.4); /* Sombra suave */
+  outline: none;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 15px;
+  background-color: #ff5c93; /* Botón rosa fuerte */
+  color: white;
+  border: none;
+  border-radius: 30px; /* Botón con bordes circulares */
+  cursor: pointer;
+  font-size: 18px; /* Texto más grande */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-box button:hover {
+  background-color: #ff3366; /* Rosa más oscuro en hover */
+  transform: translateY(-3px); /* El botón se eleva ligeramente */
+}
+
+.register-section {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.register-section button {
+  background-color: transparent;
+  color: #ff5c93; /* Color del botón para registrarse */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.register-section button:hover {
+  color: #ff3366; /* Color más oscuro en hover */
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
